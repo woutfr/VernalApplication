@@ -1,6 +1,6 @@
 package com.example.vernaljobs
 //
-
+//
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
