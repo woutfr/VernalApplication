@@ -56,6 +56,4 @@
     <string name="logo_with_text_company">Logo with text</string>
     <string name="login_button">Log In</string>
     <string name="Sign_up_button">Sign Up</string>
-    <string name="faq_button_back">Back</string>
-    <string name="register_company_button_back">Back</string>
 </resources>
