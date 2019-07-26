@@ -32,12 +32,12 @@
                     android:layout_marginTop="10dp"
                     android:drawableStart="@drawable/ic_username"
                     android:drawablePadding="10dp"
-                    android:id="@+id/Username"
+                    android:id="@+id/main_edittext_email"
                     app:layout_constraintTop_toBottomOf="@+id/Login_logo"
                     app:layout_constraintStart_toStartOf="@+id/Login_logo"
                     app:layout_constraintEnd_toEndOf="@+id/Login_logo"
                     android:textColorHighlight="@color/LogoColor"
-                    android:hint="@string/username"/>
+                    android:hint="E-mail"/>
             <EditText
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
@@ -49,15 +49,12 @@
                     android:background="@drawable/textviewbackground"
                     android:drawablePadding="10dp"
                     android:hint="@string/login_password"
-                    android:id="@+id/Password"/>
+                    android:id="@+id/main_edittext_password"/>
             <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
-                    android:focusableInTouchMode="true"
-                    android:focusable="true"
-                    android:clickable="true"
                     android:onClick="goToForgotPassword"
                     android:text="@string/forgot_password"
                     android:padding="10dp"
@@ -65,13 +62,13 @@
                     android:textColor="@color/design_default_color_primary_dark"/>
             <Button
                     android:text="@string/login_button"
-                    android:onClick="goTovacancies"
+                    android:onClick="performLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:textAllCaps="false"
-                    android:id="@+id/login_button"
+                    android:id="@+id/main_button_login"
                     android:background="@drawable/hoverbutton"
                     android:textColor="@android:color/white"
                     android:layout_marginTop="10dp"/>
@@ -84,7 +81,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:textAllCaps="false"
-                    android:id="@+id/Signup_button"
+                    android:id="@+id/main_button_signup"
                     android:background="@drawable/hoverbutton"
                     android:textColor="@android:color/white"
                     android:layout_marginTop="10dp"/>
@@ -96,7 +93,7 @@
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:textAllCaps="false"
-                    android:id="@+id/FAQ_button"
+                    android:id="@+id/main_button_faq"
                     android:background="@drawable/hoverbutton"
                     android:textColor="@android:color/white"
                     android:layout_marginTop="10dp"/>
