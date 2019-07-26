@@ -1,11 +1,14 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.vernaljobs
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.*
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
 
 
 class Registercompany : AppCompatActivity() {
@@ -16,10 +19,12 @@ class Registercompany : AppCompatActivity() {
         setContentView(R.layout.activity_register_company)
 
         lateinit var option: Spinner
-//        lateinit var result: TextView
+        lateinit var tcClick: TextView
 
         option = findViewById(R.id.spinner) as Spinner
 //        result = findViewById(R.id.Spinner_text) as TextView
+
+        tcClick = findViewById(R.id.TandC) as TextView
 
         val options = arrayOf("Delft","Elsewhere")
 
@@ -34,7 +39,7 @@ class Registercompany : AppCompatActivity() {
 //                result.text = options.get(p2)
 //            }
 
-
+        String text = 'Check the box if you agree with the Terms /u0026 Conditions and the Privacy Policy'
 
     }
 
@@ -45,8 +50,25 @@ class Registercompany : AppCompatActivity() {
 
         // Start the new activity.
         startActivity(registerIntent)
-
     }
+        fun toTermsAndConditions(view: View) {
+
+        // Create an Intent to start the second activity
+        val registerIntent = Intent(this, TermsAndConditions::class.java)
+
+        // Start the new activity.
+        startActivity(registerIntent)
+    }
+
+    fun toPrivacyPolicy(view: View) {
+
+        // Create an Intent to start the second activity
+        val registerIntent = Intent(this, PrivacyPolicy::class.java)
+
+        // Start the new activity.
+        startActivity(registerIntent)
+    }
+
 
 
 }

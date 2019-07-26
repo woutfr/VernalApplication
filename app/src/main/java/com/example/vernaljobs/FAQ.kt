@@ -1,9 +1,11 @@
+@file:Suppress("DEPRECATION")
+
 package com.example.vernaljobs
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
 class FAQ : AppCompatActivity() {
 
@@ -11,7 +13,7 @@ class FAQ : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_faq)
     }
-    fun BackToMain(view: View) {
+    fun backToMain(view: View) {
 
         // Create an Intent to start the second activity
         val registerIntent = Intent(this, MainActivity::class.java)
